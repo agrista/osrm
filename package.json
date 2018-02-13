@@ -1,0 +1,22 @@
+{
+  "name": "osrm",
+  "version": "1.0.0",
+  "description": "Routing module built on OSRM",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/agrista/osrm.git"
+  },
+  "author": "Agrista (Pty)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/agrista/osrm/issues"
+  },
+  "homepage": "https://github.com/agrista/osrm#readme",
+  "dependencies": {
+    "osrm-isochrone": "^3.0.0"
+  }
+}
