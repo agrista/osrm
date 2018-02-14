@@ -1,11 +1,5 @@
 # Install OSRM
 
-## Install on Mac
-
-```bash
-brew install osrm-backend
-```
-
 ## Install the library
 
 Ensure that Node v6 is active:
@@ -31,7 +25,7 @@ cd data
 ../node_modules/osrm/lib/binding/osrm-contract south-africa-and-lesotho-latest.osrm
 ```
 
-Then run the server:
+Then run the server to test if everything is well:
 ```bash
 ../node_modules/osrm/lib/binding/osrm-routed south-africa-and-lesotho-latest.osrm
 ```

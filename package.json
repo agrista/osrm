@@ -1,22 +1,39 @@
 {
-  "name": "osrm",
-  "version": "1.0.0",
-  "description": "Routing module built on OSRM",
+  "name": "osrm-isodist",
+  "version": "2.0.0",
+  "description": "Create distance isobands from OSRM routes",
+  "osrm_release": "5.15",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node ./test/test.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/agrista/osrm.git"
+    "url": "git+https://github.com/agrista/osrm-isodist.git"
   },
-  "author": "Agrista (Pty)",
+  "keywords": [
+    "isoband",
+    "polygon",
+    "osrm"
+  ],
+  "author": "Agrista (Pty) Ltd",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/agrista/osrm/issues"
+    "url": "https://github.com/agrista/osrm-isodist/issues"
   },
-  "homepage": "https://github.com/agrista/osrm#readme",
+  "homepage": "https://github.com/agrista/osrm-isodist#readme",
+  "devDependencies": {
+    "geojson-area": "^0.1.0",
+    "tape": "^3.0.3"
+  },
   "dependencies": {
-    "osrm-isochrone": "^3.0.0"
+    "@turf/bbox": "^5.1.5",
+    "@turf/concave": "^5.1.5",
+    "@turf/destination": "^5.1.5",
+    "@turf/distance": "^5.1.5",
+    "@turf/helpers": "^5.1.5",
+    "@turf/isolines": "^5.1.5",
+    "@turf/point-grid": "^5.1.5",
+    "osrm": "^5.15.2"
   }
 }
